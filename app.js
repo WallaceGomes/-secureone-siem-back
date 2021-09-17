@@ -5,7 +5,7 @@ const cors = require('cors');
 const error = require('./middleware/error');
 const routes = require('./routes');
 
-require('./database');
+// require('./database');
 
 const app = express();
 
