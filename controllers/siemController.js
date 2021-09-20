@@ -12,6 +12,8 @@ exports.get = async (req, res, next) => {
 exports.post = async (req, res, next) => {
 	const body = req.body;
 	const params = req.params;
+	const query = req.query;
+	const headers = req.headers;
 
 	console.log('------------');
 	console.log('----BODY----');
@@ -20,6 +22,14 @@ exports.post = async (req, res, next) => {
 	console.log('------------');
 	console.log('---PARAMS---');
 	console.log(params);
+	console.log('------------');
+	console.log('------------');
+	console.log('----QUERY----');
+	console.log(query);
+	console.log('------------');
+	console.log('------------');
+	console.log('----HEADERS----');
+	console.log(headers);
 	console.log('------------');
 
 	return res.status(200).send();
